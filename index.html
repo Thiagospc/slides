@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slides</title>
+
+    <style>
+        @keyframes slide {
+            0%, 22%{
+                transform: translateY(0);
+            }
+            25%, 47%{
+                transform: translateY(-50vh);
+            }
+            50%, 72%{
+                transform: translateY(-100vh);
+            }
+            75%, 97%{
+                transform: translateY(-150vh);
+            }
+            100%{
+                transform: translateY(0);
+            }
+        }
+
+        body{
+            font-family: sans-serif;
+            color: white;
+            background-color: #1a1818;
+            margin: 0;
+            padding: 0;
+        }
+
+        .texto{
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .externo{
+            width: 50vw;
+            height: 50vh;
+            border: 10px solid white;
+            box-shadow: 0 0 10px black;
+            margin-left: 400px;
+            margin-top: 150px;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+
+        .interno{
+            width: 100%;
+            animation: slide 12s infinite;
+        }
+        .interno img{
+            display: block;
+            height: 50vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="texto">
+        <p>Slides</p>
+    </div>
+    <div class="externo">
+        <div class="interno">
+            <img src="./slide1.jpg" alt="imagem1">
+            <img src="./slide2.jpg" alt="imagem2">
+            <img src="./slide3.jpg" alt="imagem3">
+            <img src="./slide4.jpg" alt="imagem4">
+            
+        </div>
+    </div>
+</body>
+</html>
